@@ -4,6 +4,7 @@ type StatCardProps = {
   title: string;
   value: string | number;
   sub?: string;
+  color?: "red" | "orange" | "blue";
 };
 
 export default function StatCard({ title, value, sub }: StatCardProps) {

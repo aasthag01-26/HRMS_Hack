@@ -15,8 +15,9 @@ export default function AdminDashboard() {
       <div className="grid-4">
         <StatCard title="Total Employees" value={172} sub="Across all departments" />
         <StatCard title="Present Today" value={158} sub="91.8% attendance" />
-        <StatCard title="Pending Leave Requests" value={8} sub="Requires approval" color="orange" />
-        <StatCard title="Open Grievances" value={5} sub="2 high priority" color="red" />
+        <StatCard title="Pending Leave Requests" value={8} sub="Requires approval" />
+<StatCard title="Open Grievances" value={5} sub="2 high priority" />
+
       </div>
 
       {/* RECENT / NEXT SECTIONS */}

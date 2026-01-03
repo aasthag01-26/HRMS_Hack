@@ -8,10 +8,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleLogout = () => {
-    logout();
-    navigate("/");
-  };
+  
 // Hide search on specific pages
   const hideSearch = [
     "/employee/profile",
