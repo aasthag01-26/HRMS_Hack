@@ -43,7 +43,7 @@ export default function Payroll() {
       <div className="payroll-summary">
         <SummaryCard title="Gross Earnings" value="₹87,000" type="success" />
         <SummaryCard title="Total Deductions" value="₹14,100" type="danger" />
-        <SummaryCard title="Net Salary" value="₹72,900" type="primary" />
+        <SummaryCard title="Net Salary" value={`₹${netSalary}`} type="primary" />
       </div>
 
       {/* CONTENT */}

@@ -1,13 +1,13 @@
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { ReactNode } from "react";
 
-export default function ProtectedRoute({
-  children,
-  role,
-}: {
-  children: JSX.Element;
+type Props = {
+  children: ReactNode;
   role: "admin" | "employee";
-}) {
+};
+
+export default function ProtectedRoute({ children, role }: Props) {
   const { role: userRole } = useAuth();
 
   // not logged in
@@ -15,10 +15,10 @@ export default function ProtectedRoute({
     return <Navigate to="/login" replace />;
   }
 
-  // wrong role access
+  // wrong role
   if (userRole !== role) {
     return <Navigate to="/login" replace />;
   }
 
-  return children;
+  return <>{children}</>;
 }

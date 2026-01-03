@@ -52,9 +52,7 @@ export default function Navbar() {
              {role === "admin" ? "Admin Panel" : "Employee Portal"}
           </span>
 
-          {/* <button className="logout-btn" onClick={handleLogout}>
-            Logout
-          </button> */}
+          
         </div>
       )}
     </header>
