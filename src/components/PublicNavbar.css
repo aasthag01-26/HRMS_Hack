@@ -1,0 +1,39 @@
+.public-navbar {
+  height: 60px;
+  background: #0b3c8c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logo span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.login-btn {
+  background: white;
+  color: #0b3c8c;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.active-link {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}

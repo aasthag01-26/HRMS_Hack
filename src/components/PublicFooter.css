@@ -1,0 +1,22 @@
+.public-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background: #f8fafc;   /* light grey */
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: #475569;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-right {
+  text-align: right;
+  max-width: 420px;
+  line-height: 1.4;
+}

@@ -1,0 +1,109 @@
+.attendance-page {
+  padding: 24px;
+}
+
+/* HEADER */
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* SUMMARY */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e6eaf0;
+}
+
+.summary-card strong {
+  font-size: 22px;
+  display: block;
+}
+
+.summary-card span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.success strong { color: #16a34a; }
+.danger strong { color: #dc2626; }
+.warning strong { color: #f59e0b; }
+.info strong { color: #2563eb; }
+
+/* TABLE */
+.table-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e6eaf0;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #edf0f5;
+  text-align: left;
+  font-size: 14px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.present {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.absent {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.on-leave {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* BUTTONS */
+.primary-btn {
+  background: #0b3a82;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-btn {
+  background: #f1f5f9;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-left: 6px;
+  cursor: pointer;
+}

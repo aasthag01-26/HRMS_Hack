@@ -1,0 +1,116 @@
+.grievance-page {
+  padding: 24px;
+}
+
+/* HEADER */
+.grievance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+/* STATS */
+.grievance-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #e6eaf0;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 24px;
+  color: #0b3a82;
+}
+
+.stat-card span {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* LIST */
+.grievance-card {
+  background: white;
+  border: 1px solid #e6eaf0;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.grievance-item {
+  border: 1px solid #eef2f7;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.grievance-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.tag {
+  background: #e0e7ff;
+  color: #1e40af;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.desc {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.resolution-box {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.resolution-box.success {
+  background: #ecfdf5;
+  color: #166534;
+}
+
+.resolution-box.pending {
+  background: #fffbeb;
+  color: #92400e;
+}
+
+/* BUTTON */
+.primary-btn {
+  background: #0b3a82;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}

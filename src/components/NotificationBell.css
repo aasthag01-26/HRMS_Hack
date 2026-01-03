@@ -1,0 +1,63 @@
+.notification-wrapper {
+  position: relative;
+  margin-right: 16px;
+}
+
+.notification-btn {
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
+
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1d4ed8
+}
+
+.notification-btn:hover {
+  background: #e0e9ff;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  width: 260px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.notification-dropdown h4 {
+  margin: 0;
+  padding: 12px;
+  font-size: 14px;
+  background: #f5f7fb;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.notification-item {
+  padding: 12px;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}

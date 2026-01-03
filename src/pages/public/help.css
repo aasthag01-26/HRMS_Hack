@@ -1,0 +1,82 @@
+.help-page {
+  padding: 24px;
+}
+
+.help-header p {
+  color: #64748b;
+}
+
+.help-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* FAQ */
+.faq-box {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e6eaf0;
+}
+
+.subtext {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 14px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-answer {
+  font-size: 13px;
+  color: #475569;
+  padding-bottom: 12px;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+}
+
+/* RIGHT */
+.help-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #e6eaf0;
+  font-size: 14px;
+}
+
+.closed {
+  color: red;
+}
+
+.privacy {
+  background: #f1f5f9;
+}

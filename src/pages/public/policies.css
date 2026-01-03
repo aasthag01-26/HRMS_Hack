@@ -1,0 +1,98 @@
+.policies-page {
+  padding: 24px;
+}
+
+/* HEADER */
+.policies-header {
+  margin-bottom: 20px;
+}
+
+.policies-header p {
+  color: #64748b;
+}
+
+/* FILTER */
+.filter-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #e6eaf0;
+  margin-bottom: 24px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dbe2ea;
+}
+
+/* GRID */
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.policy-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e6eaf0;
+}
+
+.policy-top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.doc-icon {
+  font-size: 26px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.desc {
+  font-size: 14px;
+  color: #475569;
+  margin: 12px 0;
+}
+
+.dept {
+  font-size: 13px;
+  color: #0b3a82;
+  margin-bottom: 14px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.view-btn,
+.download-btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #dbe2ea;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.view-btn:hover,
+.download-btn:hover {
+  background: #eef2ff;
+}

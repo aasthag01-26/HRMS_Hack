@@ -1,0 +1,143 @@
+.grievance-page {
+  padding: 24px;
+}
+
+/* HEADER */
+.grievance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* STATS */
+.grievance-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filters select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #dce3ee;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e6eaf0;
+}
+
+/* GRIEVANCE ITEM */
+.grievance-card {
+  padding: 16px 0;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.grievance-card:last-child {
+  border-bottom: none;
+}
+
+.grievance-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+/* BADGES */
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.medium {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.low {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.pending {
+  background: #fff4e5;
+  color: #c2410c;
+}
+
+.resolved {
+  background: #e6f7ee;
+  color: #15803d;
+}
+
+/* RESOLUTION */
+.resolution-box {
+  margin-top: 14px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* COMMON */
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid #e6eaf0;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.orange {
+  color: #ea580c;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.primary-btn {
+  background: #0b3a82;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.outline-btn {
+  background: white;
+  border: 1px solid #dce3ee;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}

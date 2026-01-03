@@ -1,0 +1,133 @@
+.payroll-page {
+  padding: 24px;
+}
+
+/* HEADER */
+.payroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+/* SUMMARY */
+.payroll-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.summary-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e6eaf0;
+}
+
+.summary-card span {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.summary-card strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 22px;
+}
+
+.summary-card.success strong {
+  color: #16a34a;
+}
+
+.summary-card.danger strong {
+  color: #dc2626;
+}
+
+.summary-card.primary {
+  background: #0b3a82;
+  color: white;
+}
+
+.summary-card.primary span {
+  color: #dbeafe;
+}
+
+/* CONTENT */
+.payroll-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+}
+
+/* SALARY */
+.salary-card,
+.payslip-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid #e6eaf0;
+}
+
+.section-title {
+  font-size: 12px;
+  color: #64748b;
+  margin: 14px 0 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eef2f7;
+  font-size: 14px;
+}
+
+.row.success {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.row.danger {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* PAYSLIPS */
+.payslip-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  margin-bottom: 10px;
+}
+
+.payslip-row small {
+  display: block;
+  color: #64748b;
+}
+
+.payslip-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.primary-btn {
+  background: #0b3a82;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}

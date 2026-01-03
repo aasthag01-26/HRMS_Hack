@@ -1,0 +1,63 @@
+.departments-page {
+  padding: 24px;
+}
+
+/* HEADER */
+.dept-header {
+  margin-bottom: 20px;
+}
+
+.dept-header p {
+  color: #64748b;
+}
+
+/* COUNT CARD */
+.dept-count {
+  margin-bottom: 24px;
+}
+
+.count-box {
+  background: #f1f5f9;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #e2e8f0;
+  max-width: 420px;
+}
+
+.count-icon {
+  font-size: 30px;
+}
+
+/* GRID */
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.dept-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e6eaf0;
+}
+
+.dept-card h4 {
+  margin-bottom: 8px;
+}
+
+.dept-desc {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 14px;
+}
+
+.dept-info {
+  font-size: 13px;
+  color: #334155;
+  margin-top: 6px;
+}
