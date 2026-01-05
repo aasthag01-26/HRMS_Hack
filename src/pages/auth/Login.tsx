@@ -1,23 +1,36 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import { loginUser } from "../../services/authService";
 
 export default function Login() {
   const navigate = useNavigate();
-  const { login } = useAuth();
+  const { setUser } = useAuth();
 
-  const [role, setRole] = useState<"employee" | "admin">("employee");
   const [employeeId, setEmployeeId] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     if (!employeeId || !password) {
       alert("Please enter Employee ID and Password");
       return;
     }
 
-    login(role);
-    navigate(role === "employee" ? "/employee/dashboard" : "/admin/dashboard");
+    try {
+      const user = await loginUser(employeeId, password);
+
+      // ✅ Save logged-in user & role in context
+      setUser(user);
+
+      // ✅ Redirect based on role
+      if (user.role === "employee") {
+        navigate("/employee/dashboard");
+      } else {
+        navigate("/admin/dashboard");
+      }
+    } catch (error) {
+      alert("Invalid Employee ID or Password");
+    }
   };
 
   return (
@@ -55,41 +68,7 @@ export default function Login() {
           Sign in to access your HRMS portal
         </p>
 
-        {/* ROLE TABS */}
-        <div
-          style={{
-            display: "flex",
-            background: "#f1f5f9",
-            borderRadius: "10px",
-            padding: "4px",
-            marginBottom: "18px",
-          }}
-        >
-          {["employee", "admin"].map((r) => (
-            <div
-              key={r}
-              onClick={() => setRole(r as "employee" | "admin")}
-              style={{
-                flex: 1,
-                padding: "10px",
-                textAlign: "center",
-                borderRadius: "8px",
-                cursor: "pointer",
-                fontWeight: 500,
-                background: role === r ? "white" : "transparent",
-                color: role === r ? "#2563eb" : "#334155",
-                boxShadow:
-                  role === r
-                    ? "0 2px 6px rgba(0,0,0,0.08)"
-                    : "none",
-              }}
-            >
-              {r === "employee" ? "Employee" : "Admin / HR"}
-            </div>
-          ))}
-        </div>
-
-        {/* INPUTS */}
+        {/* EMPLOYEE ID */}
         <label style={{ fontSize: "12px", fontWeight: 500 }}>
           Employee ID
         </label>
@@ -101,6 +80,7 @@ export default function Login() {
           style={inputStyle}
         />
 
+        {/* PASSWORD */}
         <label style={{ fontSize: "12px", fontWeight: 500 }}>
           Password
         </label>
@@ -130,7 +110,7 @@ export default function Login() {
           Sign In
         </button>
 
-        {/* FOOTER LINKS */}
+        {/* BACK LINK */}
         <p
           style={{
             textAlign: "center",
