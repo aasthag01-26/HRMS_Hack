@@ -1,6 +1,7 @@
 const express = require("express");
 const session = require("express-session");
 const cors = require("cors");
+const attendanceRoutes=require("./routes/attendance");
 
 const connectDB = require("./config/db");
 const passport = require("./config/passport");
@@ -32,6 +33,7 @@ app.use(passport.session());
 
 /* ROUTES */
 app.use("/api/auth", authRoutes);
+app.use("/api/attendance", attendanceRoutes);
 
 app.listen(5000, () => {
   console.log("Server running on port 5000");
