@@ -119,14 +119,14 @@ We built a **centralized HRMS portal** with:
 
 --- -->
 
-## 📌 Hackathon Highlights
+<!-- ## 📌 Hackathon Highlights
 - Strong problem relevance
 - Clear role separation
 - Real-world applicability
 - Scalable & modular design
 - Government-ready UI
 
----
+--- -->
 
 ## 📜 License
 This project is created for educational and hackathon purposes.
