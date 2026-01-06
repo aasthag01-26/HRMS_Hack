@@ -107,17 +107,17 @@ We built a **centralized HRMS portal** with:
 
 ---
 
-## 📸 Screenshots
+<!-- ## 📸 Screenshots
 (Add screenshots of dashboards, public portal, and admin panel here)
 
----
+--- -->
 
-## 🧑‍💻 Team
+<!-- ## 🧑‍💻 Team
 - **Frontend Developer:** Aastha  
 - **Backend Developer:** Team Member  
 - **UI/UX & Architecture:** Team
 
----
+--- -->
 
 ## 📌 Hackathon Highlights
 - Strong problem relevance
